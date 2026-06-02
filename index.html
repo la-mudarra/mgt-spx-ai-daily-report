@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.77">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=900, initial-scale=1.0" /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&amp;display=swap');</p>
+<p class="p2"><br></p>
+<p class="p1">* {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-sizing: border-box;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">html, body {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 900px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #020817;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.report {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 820px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>min-height: 1120px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 36px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 42px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:</p>
+<p class="p1"><span class="Apple-converted-space">    </span>radial-gradient(circle at top left, rgba(56,189,248,.18), transparent 35%),</p>
+<p class="p1"><span class="Apple-converted-space">    </span>linear-gradient(180deg, #06111f 0%, #020817 100%);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 2px solid rgba(56,189,248,.35);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-shadow: 0 0 55px rgba(14,165,233,.25);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.header {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 34px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.brand {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.logo {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 46px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.title h1 {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 42px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 1px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.title h2 {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 6px 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #38bdf8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 800;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.date-box {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: right;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #dbeafe;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.6;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(15, 23, 42, .82);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid rgba(56,189,248,.25);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 26px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 24px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.symbol-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: space-between;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #94a3b8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 1.5px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.symbol {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 58px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 6px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.instrument {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: right;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.instrument .name {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #38bdf8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 700;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.instrument .desc {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #cbd5e1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 21px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 8px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.grid-2 {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap: 22px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.metric {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 26px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(2, 8, 23, .42);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 24px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.metric-title {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #94a3b8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 21px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.metric-value {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 10px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.green {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #4ade80;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.red {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #f87171;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.yellow {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #facc15;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.bias-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color: rgba(250,204,21,.35);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: linear-gradient(90deg, rgba(250,204,21,.12), rgba(15,23,42,.85));</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.bias-left {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap: 20px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.bias-icon {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 44px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.bias-title {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #facc15;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 800;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.bias-value {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 44px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 4px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.footer {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(14,165,233,.10);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid rgba(56,189,248,.30);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.generated {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #cbd5e1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.5;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.footer-brand {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: right;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.footer-brand strong {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #38bdf8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 24px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.footer-brand div {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #cbd5e1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 6px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.auto {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 26px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #94a3b8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 18px;</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="report"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="brand"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="logo"&gt;📊&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="title"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;MGT SPX AI&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;DAILY REPORT&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="date-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="report-date"&gt;May 31, 2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="report-time"&gt;11:25 PM&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="color:#94a3b8;"&gt;Asia/Riyadh&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card symbol-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="label"&gt;Symbol&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="symbol" class="symbol"&gt;SPY&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="instrument"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="name"&gt;SPDR S&amp;P 500 ETF TRUST&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="desc"&gt;S&amp;P 500 Index ETF&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card grid-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="metric"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="metric-title"&gt;Open&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="open" class="metric-value"&gt;756.01&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="metric"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="metric-title"&gt;Close&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="close" class="metric-value"&gt;756.48&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card grid-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="metric"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="metric-title green"&gt;High&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="high" class="metric-value green"&gt;758.08&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="metric"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="metric-title red"&gt;Low&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="low" class="metric-value red"&gt;754.69&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card grid-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="metric"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="metric-title"&gt;Change&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="change" class="metric-value green"&gt;+0.47&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="metric"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="metric-title"&gt;Change %&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="changePct" class="metric-value green"&gt;+0.06%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card bias-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bias-left"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="bias-icon" class="bias-icon"&gt;🟡&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bias-title"&gt;MARKET BIAS&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="market-bias" class="bias-value"&gt;NEUTRAL&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="font-size:54px;"&gt;⚖️&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="generated"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;strong style="color:#38bdf8;"&gt;Generated:&lt;/strong&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span id="generated"&gt;May 31, 2026, 11:25 PM&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="footer-brand"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;strong&gt;MGT SPX AI&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;Smart Data. Smarter Decisions.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>✈ This message was sent automatically with n8n</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">const params = new URLSearchParams(window.location.search);</p>
+<p class="p2"><br></p>
+<p class="p1">function setText(id, value, fallback) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById(id).innerText = value || fallback;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">const symbol = params.get("symbol") || "SPY";</p>
+<p class="p1">const open = params.get("open") || "756.01";</p>
+<p class="p1">const close = params.get("close") || "756.48";</p>
+<p class="p1">const high = params.get("high") || "758.08";</p>
+<p class="p1">const low = params.get("low") || "754.69";</p>
+<p class="p1">const change = params.get("change") || "0.47";</p>
+<p class="p1">const changePct = params.get("changePct") || "0.06";</p>
+<p class="p1">const bias = params.get("bias") || "Neutral";</p>
+<p class="p1">const date = params.get("date") || "May 31, 2026";</p>
+<p class="p1">const time = params.get("time") || "11:25 PM";</p>
+<p class="p2"><br></p>
+<p class="p1">setText("symbol", symbol);</p>
+<p class="p1">setText("open", open);</p>
+<p class="p1">setText("close", close);</p>
+<p class="p1">setText("high", high);</p>
+<p class="p1">setText("low", low);</p>
+<p class="p2"><br></p>
+<p class="p1">const changeNumber = Number(change);</p>
+<p class="p1">const changePctNumber = Number(changePct);</p>
+<p class="p2"><br></p>
+<p class="p1">const changeText = changeNumber &gt;= 0 ? "+" + change : change;</p>
+<p class="p1">const changePctText = changePctNumber &gt;= 0 ? "+" + changePct + "%" : changePct + "%";</p>
+<p class="p2"><br></p>
+<p class="p1">setText("change", changeText);</p>
+<p class="p1">setText("changePct", changePctText);</p>
+<p class="p2"><br></p>
+<p class="p1">document.getElementById("change").className =</p>
+<p class="p1"><span class="Apple-converted-space">  </span>"metric-value " + (changeNumber &gt;= 0 ? "green" : "red");</p>
+<p class="p2"><br></p>
+<p class="p1">document.getElementById("changePct").className =</p>
+<p class="p1"><span class="Apple-converted-space">  </span>"metric-value " + (changePctNumber &gt;= 0 ? "green" : "red");</p>
+<p class="p2"><br></p>
+<p class="p1">let biasIcon = "🟡";</p>
+<p class="p1">let biasText = bias.toUpperCase();</p>
+<p class="p2"><br></p>
+<p class="p1">if (bias.toLowerCase().includes("bull")) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>biasIcon = "🟢";</p>
+<p class="p1">} else if (bias.toLowerCase().includes("bear")) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>biasIcon = "🔴";</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">setText("market-bias", biasText);</p>
+<p class="p1">setText("bias-icon", biasIcon);</p>
+<p class="p2"><br></p>
+<p class="p1">setText("report-date", date);</p>
+<p class="p1">setText("report-time", time);</p>
+<p class="p1">setText("generated", `${date}, ${time}`);</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
