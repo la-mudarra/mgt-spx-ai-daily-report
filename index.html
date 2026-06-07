@@ -83,7 +83,6 @@
     </div>
     <div class="date-box">
       <div id="report-date"></div>
-      <div id="report-time"></div>
     </div>
   </div>
 
@@ -123,15 +122,12 @@ const p = new URLSearchParams(window.location.search);
 const set = (id, val) => { if(document.getElementById(id)) document.getElementById(id).innerText = val || "-"; };
 
 set("symbol", p.get("symbol"));
-set("instrument-name", p.get("name"));
-set("instrument-desc", p.get("desc"));
 set("open", p.get("open"));
 set("close", p.get("close"));
 set("high", p.get("high"));
 set("low", p.get("low"));
 set("report-date", p.get("date"));
-set("report-time", p.get("time"));
-set("generated", `${p.get("date")}, ${p.get("time")}`);
+set("generated", p.get("generated"));
 
 const chg = parseFloat(p.get("change"));
 const chgPct = parseFloat(p.get("changePct"));
